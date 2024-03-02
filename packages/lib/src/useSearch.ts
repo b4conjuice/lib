@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import Fuse from 'fuse.js'
 
-const useSearch = <T>({
+export default function useSearch<T>({
   initialSearch,
   list,
   options,
@@ -9,7 +9,7 @@ const useSearch = <T>({
   initialSearch?: string
   list: T[]
   options: Record<string, string[]>
-}) => {
+}) {
   const searchRef = useRef<HTMLInputElement | null>(null)
 
   const [search, setSearch] = useState(initialSearch ?? '')
@@ -21,5 +21,3 @@ const useSearch = <T>({
 
   return { search, setSearch, results, searchRef }
 }
-
-export default useSearch

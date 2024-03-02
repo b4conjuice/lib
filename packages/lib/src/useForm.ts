@@ -10,7 +10,7 @@ const isEmpty = (obj: Values | Partial<Values>) => {
   return Object.keys(obj).length === 0 && obj.constructor === Object
 }
 
-const useForm = ({
+export default function useForm({
   onSubmit,
   validate,
   initialValues,
@@ -24,7 +24,7 @@ const useForm = ({
   ) => void
   validate?: (values: Values) => Partial<Values>
   initialValues: Values
-}) => {
+}) {
   const initialValuesRef = useRef(initialValues)
   const initialErrors = {}
   const [values, setValues] = useState(initialValues)
@@ -78,5 +78,3 @@ const useForm = ({
     errors,
   }
 }
-
-export default useForm

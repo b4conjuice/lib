@@ -1,4 +1,4 @@
-const copyToClipboard = (textToCopy: string) => {
+export default function copyToClipboard (textToCopy: string) {
   let textArea: HTMLTextAreaElement
 
   function isOS() {
@@ -39,5 +39,3 @@ const copyToClipboard = (textToCopy: string) => {
   selectText()
   copyTo()
 }
-
-export default copyToClipboard
