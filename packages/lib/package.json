@@ -12,5 +12,8 @@
   "dependencies": {
     "fuse.js": "^7.0.0",
     "react": "^18.2.0"
+  },
+  "scripts": {
+    "publish": "bunx jsr publish --allow-slow-types"
   }
 }
