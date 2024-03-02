@@ -1,0 +1,19 @@
+{
+  "name": "lib",
+  "private": true,
+  "workspaces": [
+    "app",
+    "packages/*",
+    "www"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "dev:www": "npm --prefix www run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "daniel lopez",
+  "license": "ISC"
+}
