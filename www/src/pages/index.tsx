@@ -1,6 +1,5 @@
-import { Main, Title } from '@bacondotbuild/ui'
-
 import Layout from '@/components/layout'
+import { Main, Title } from '@/components/ui'
 
 export default function Home() {
   return (

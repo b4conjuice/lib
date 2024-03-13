@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Header, Page } from '@bacondotbuild/ui'
-
 import Meta from '@/components/meta'
+import { Header, Page } from '@/components/ui'
 
 const DEFAULT_TITLE = 'lib'
 
