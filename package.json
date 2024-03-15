@@ -2,7 +2,6 @@
   "name": "lib",
   "private": true,
   "workspaces": [
-    "app",
     "packages/*",
     "www"
   ],
