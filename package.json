@@ -1,16 +1,12 @@
 {
   "name": "lib",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "www"
-  ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:www": "npm --prefix www run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "www": "pnpm --filter www",
+    "app": "pnpm --filter app"
   },
   "keywords": [],
   "author": "daniel lopez",

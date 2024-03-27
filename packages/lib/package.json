@@ -1,17 +1,14 @@
 {
   "name": "lib",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/react": "^18.2.61"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "fuse.js": "^7.0.0",
-    "react": "^18.2.0"
+    "react": "18.2.0"
   },
   "scripts": {
     "publish": "bunx jsr publish --allow-slow-types"

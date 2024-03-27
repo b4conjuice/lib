@@ -46,12 +46,18 @@ export default function useForm({
   )
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value, type } = e.currentTarget
+    const checked = (<HTMLInputElement>e.currentTarget).checked
     setValues({
       ...values,
-      [name]: type === 'number' ? parseInt(value, 10) : value,
+      [name]:
+        type === 'number'
+          ? parseInt(value, 10)
+          : type === 'checkbox'
+          ? checked
+          : value,
     })
   }
 

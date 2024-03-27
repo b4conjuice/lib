@@ -1,0 +1,8 @@
+{
+  "name": "lib-www",
+  "short_name": "lib-www",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/"
+}
